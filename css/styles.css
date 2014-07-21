@@ -1,0 +1,15 @@
+img   {
+  max-width: 100%;
+}
+
+.form-control {
+  width: 30%;
+}
+
+.btn  {
+  margin-top: 10px;
+}
+
+.result {
+  display: none;
+}

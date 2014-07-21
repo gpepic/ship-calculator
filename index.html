@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" text="text/css">
+  <link href="css/styles.css" rel="stylesheet" text="text/css">
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Shipping Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Calculate your shipping</h1>
+      <div class="col-md-4">
+        <h3>Shipping Options</h3>
+        <img src="img/boxes.jpg">
+      </div>
+      <div class="col-md-8">
+        <h3>Choose shipping criteria</h3>
+        <form id="package" role="form">
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" class="form-control"></input>
+
+            <label for="size">Size</label>
+
+              <select id="size-box" class="form-control">
+                  <option value=15>Small - $15.00</option>
+                  <option value=30>Medium - $30.00</option>
+                  <option value=45>Large - $45.00</option>
+              </select>
+              <label>Shipping</label>
+              <select id="shipping" class="form-control">
+                  <option value=0>Standard (5 days) - $0.00</option>
+                  <option value=10>Express (2 days) - $10.00</option>
+                  <option value=20>Overnight (next day) - $20.00</option>
+              </select>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+    <div class="result">
+      <h3>Shipment Total: $<span class="total"></span></h3>
+
+    </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
